@@ -12,14 +12,14 @@
 .impress-supported .fallback-message { display: none; }
 
 body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 300;
-  background: radial-gradient(ellipse at center, yellowgreen 0%, #000 100%);
+  background: radial-gradient(ellipse at center, yellowgreen 0, black 100%);
 }
 
 .step {
   position: relative;
-  width: 1200px;
+  width: 100vw;
   padding: 40px;
   margin: 20px auto;
   -webkit-box-sizing: border-box;
@@ -42,26 +42,41 @@ body {
 
 .slide {
   display: block;
-  width: 1200px;
-  height: 750px;
+  width: 80vw;
+  height: 80vh;
   color: white;
-  text-shadow: 1px 1px 0px #000;
+  text-shadow: 1px 1px 0px black;
   font-size: 2em;
 }
 .slide h1 {
   font-weight: 900;
   font-size: 2em;
 }
+.slide h2 {
+  font-weight: 700;
+  font-size: 1.67em;
+}
+.slide h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.slide h4 {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+.slide h5 {
+  font-weight: 400;
+  font-size: 1em;
+}
 .slide.ord {
-  background-color: #FFF;
-  background: radial-gradient(circle at center, #FFF 75%, silver 100%);
-  border: 3px solid #000;
+  background-color: white;
+  background: radial-gradient(circle at center, white 75%, silver 100%);
+  border: 3px solid black;
   border-radius: 4px;
   color: #444;
   text-shadow: none;
 }
-.slide a { color: #FFF; }
-.slide.demo {}
+.slide a { color: white; }
 
 pre {
   text-shadow: none;
@@ -72,7 +87,7 @@ pre {
   text-align: center;
   background: transparent;
   border: none;
-  text-shadow: 0 0 3px #000;
+  text-shadow: 4px 3px 1px black, 0 0 30px rgba(0, 0, 0, 0.66);
   color: white;
 }
 #intro h1 {
@@ -80,20 +95,9 @@ pre {
   font-weight: 900;
 }
 #intro h3 {
-  font-weight: 300;
-  font-size: 4em;
+  font-weight: 700;
+  font-size: 3.7em;
+  color: black;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.66);
 }
 ul li { list-style: outside square; }
-
-#me {
-  text-align: center;
-  text-shadow: 1px 1px 0px #000;
-}
-#me h2 {
-  font-size: 3.3em;
-  font-weight: 500;
-}
-#me h3 {
-  font-size: 2.3em;
-  font-weight: 300;
-}
