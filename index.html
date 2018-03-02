@@ -29,82 +29,126 @@
     <div class="step slide" data-x="0" data-y="0" data-rotate="180" data-perspective="1">
       <h1>Introduction</h1>
       <br/>
+      <br/>
       <h3>What problems it aims to solve?</h3>
       <br/>
-      <p></p>
+      <p>Provides full DevTools for the (small) screen.</p>
+      <br/>
+      <p>Debugging directly off the device/phone/tabled, see what happens on the device, no guessing, no alerts</p>
     </div>
-    <div class="step slide" data-x="0" data-y="-1000" data-rotate="204" data-perspective="1">
-      <h1>What about browser built-in mobile simulators</h1>
+    <div class="step slide" data-x="0" data-y="-1500" data-rotate="204" data-perspective="1">
+      <h1>Built-in mobile simulators</h1>
       <br/>
       <br/>
-      <p></p>
+      <p>Browser built-in mobile simulators are good, but none replicates phone 1:1</p>
     </div>
-    <div class="step slide" data-x="0" data-y="-2000" data-rotate="232" data-perspective="1">
+    <div class="step slide" data-x="0" data-y="-2500" data-rotate="232" data-perspective="1">
       <h1>Requirements</h1>
       <br/>
       <br/>
       <ul>
-        <li>phone &ndash; Android or iOS</li>
-        <li>browser &ndash; Chrome, Firefox, Vivaldi, Safari</li>
+        <li>phone &rarr; Android or iOS</li>
+        <li>browser &rarr; Chrome, Firefox, Vivaldi, Safari</li>
         <li>cable, maybe</li>
+        <li><strong>weinre</strong>, maybe</li>
       </ul>
     </div>
 
-    <div class="step slide" data-x="500" data-y="-3000" data-rotate="256" data-perspective="1">
+    <div class="step slide" data-x="1000" data-y="-3500" data-rotate="256" data-perspective="1">
       <h1>Supported browsers and systems</h1>
       <br/>
       <h3>Android</h3>
       <ul>
-        <li>Chrome</li>
+        <li>Chrome &amp; Vivaldi</li>
         <li>Firefox</li>
-        <li>Vivaldi</li>
       </ul>
       <h3>iOS</h3>
       <ul>
         <li>Safari</li>
       </ul>
+      <h3>Windows Phone</h3>
+      <ul>
+        <li>over the <strong>weinre</strong></li>
+      </ul>
     </div>
 
-    <div class="step slide" data-x="1500" data-y="1500" data-rotate="135">
+    <div class="step slide" data-x="3000" data-y="0" data-rotate="135">
       <h1>Chrome</h1>
       <br/>
       <p>
-        All devices running Chrome - so no iOS.
+        All devices running Blink, no iOS
       </p>
-      <p>
-        On the device: Developer Options &rarr; Enable USB Debugging. <br>
-        On the 
-      </p>
+      <ul>
+        <li>On the device: <strong>Android settings</strong> &rarr; <strong>Developer options</strong> &rarr; <strong>Enable USB debugging</strong></li>
+        <li>On the browser: <strong>DevTools</strong> &rarr; <strong>Main menu</strong> &rarr; <strong>More tools</strong> &rarr; <strong>Remote devices</strong></li>
+        <li>Not done yet: <strong>DevTools</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Discover USB devices</strong></li>
+      </ul>
+      <p>Then, in <strong>Remote devices</strong> tab, open the page &rarr; <strong>Inspect</strong>, you're done!</p>
     </div>
 
-    <div class="step slide" data-x="3000" data-y="1500" data-rotate="180">
+    <div class="step slide" data-x="3000" data-y="-1000" data-rotate="135">
       <h1>Firefox</h1>
       <br/>
       <p>
-        All devices running Firefox - so, again, no iOS.
+        All devices running Gecko, no iOS
       </p>
+      <ul>
+        <li>On the device: <strong>Android settings</strong> &rarr; <strong>Developer options</strong> &rarr; <strong>Enable USB debugging</strong></li>
+        <li>On the device browser: <strong>Settings</strong> &rarr; <strong>Advanced</strong> &rarr; <strong>Remote debugging via USB/Wi-Fi</strong></li>
+        <li>On the browser: <strong>Tools</strong> &rarr; <strong>Web Developer</strong> &rarr; <strong>WebIDE</strong></li>
+      </ul>
+      <p>For debugging via Wi-Fi, scan the QR code provided by WebIDE.</p>
     </div>
 
-    <div class="step slide" data-x="4000" data-y="2500" data-rotate="270">
+    <div class="step slide" data-x="3000" data-y="-3000" data-rotate="135">
       <h1>Vivaldi</h1>
       <br/>
+      <br/>
       <p>
-        Since Vivaldi uses Blink rendering engine from Chromium project, everything is 
+        Already covered, Vivaldi uses Blink rendering engine from Chromium project, everything is 
         exactly the same as in Chromium/Chrome.
       </p>
     </div>
 
-    <div class="step slide" data-x="5000" data-y="2500" data-rotate="270">
-      <h1>Safari on iOS</h1>
+    <div class="step slide" data-x="3000" data-y="-5000" data-rotate="135">
+      <h1>Safari</h1>
       <br/>
       <p>
-        Xcode
+        All iOS devices running iOS 6+ and Safari
+      </p>
+      <ul>
+        <li>On the device: <strong>Settings</strong> &rarr; <strong>Safari</strong> &rarr; <strong>Advanced</strong> &rarr; <strong>Web Inspector</strong></li>
+        <li>On the browser: <strong>Preferences</strong> &rarr; <strong>Advanced</strong> &rarr; <strong>Show Develop menu in menu bar</strong></li>
+        <li>Not there yet: <strong>Safari</strong> &rarr; <strong>Develop</strong> &rarr; <strong>Phone</strong></li>
+      </ul>
+      <br>
+      <p>
+        Works with Xcode phone simulator as well, at least sometimes.
       </p>
     </div>
 
-  <div class="step slide" data-x="1000" data-y="6000" data-rotate="135" data-perspective="3">
-    <h1>That's all, folks!</h1>
-  </div>
+    <div class="step slide" data-x="3000" data-y="-7000" data-rotate="135">
+      <h1>More tools</h1>
+      <br/>
+      <br/>
+      <ul>
+        <li><strong>weinre</strong> &mdash; WEb INspector REmote: <a href="https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html">see here for more</a></li>
+        <li><strong>Valence</strong> &mdash; Firefox Tools Adapter: <a href="https://developer.mozilla.org/en-US/docs/Tools/Valence">see here for more</a></li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-x="9000" data-y="9000" data-rotate="270" data-perspective="3">
+      <h1>That's all, folks!</h1>
+      <br>
+      <br>
+      <p>
+        See this on the <a href="https://github.com/elkarrde/remote-mobile-debugging">GitHub</a>.
+      </p>
+      <br>
+      <p>
+        Well written guide: <a href="https://developer.telerik.com/featured/a-concise-guide-to-remote-debugging-on-ios-android-and-windows-phone">A concise guide to remote debugging</a>
+      </p>
+    </div>
   </div>
 
   <script src="js/impress.js"></script>

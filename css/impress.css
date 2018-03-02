@@ -80,7 +80,12 @@ body {
   color: #444;
   text-shadow: none;
 }
-.slide a { color: white; }
+.slide a { 
+  color: darkorange; 
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
 
 pre {
   text-shadow: none;
