@@ -19,7 +19,7 @@ body {
 
 .step {
   position: relative;
-  width: 100vw;
+  width: 80vw;
   padding: 40px;
   margin: 20px auto;
   -webkit-box-sizing: border-box;
@@ -42,7 +42,7 @@ body {
 
 .slide {
   display: block;
-  width: 80vw;
+  width: 100vw;
   height: 80vh;
   color: white;
   text-shadow: 1px 1px 0px black;
@@ -51,6 +51,10 @@ body {
 .slide h1 {
   font-weight: 900;
   font-size: 2em;
+}
+.slide h1 small {
+  color: white;
+  font-weight: 300;
 }
 .slide h2 {
   font-weight: 700;
